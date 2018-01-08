@@ -1,5 +1,4 @@
 ## Структура проекта
-- public_html
   - css
     - **index-template.css** - оформление приложения, подключается в **index-template.html**
   - js
