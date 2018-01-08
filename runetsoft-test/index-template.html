@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index-template.css" />
+    <title>Runetsoft Test</title>
+</head>
+<body>
+    <div>
+        <a href="..">Портфолио</a> &bull; <a href="#">Тестовое задание от RuNetSoft</a>
+        <hr>
+    </div>
+    <div class="container">
+        <h2>Образование:</h2>
+        <select multiple id="educationSelect">
+            <?php foreach ($education as $name): ?>
+                <option selected>
+                    <?=$name?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+        <h2>Города:</h2>
+        <select multiple id="citiesSelect">
+            <?php foreach ($cities as $name): ?>
+                <option selected>
+                    <?=$name?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+        <table id="usersInfoTable">
+            <tr>
+                <th>ФИО</th>
+                <th>Образование</th>
+                <th>Города</th>
+            </tr>
+            <?php foreach ($usersFullInfo as $user_info): ?>
+                <tr>
+                    <td><?=$user_info['user_name']?></td>
+                    <td><?=$user_info['education_name']?></td>
+                    <td><?=$user_info['cities_names']?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    </div>
+    <script src="js/filterByEducationAndCities.js"></script>
+</body>
+</html>

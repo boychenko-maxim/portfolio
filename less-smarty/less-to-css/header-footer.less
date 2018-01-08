@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: "PT Sans";
+  background: url('../img/body-bg.png') 50% 0 #F8F8F8;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 15px;
+  background: white;
+
+  .header-left {
+    float: left;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  .phone-menu {
+    float: left;
+  }
+
+  .mail-feedback {
+    float: right;
+  }
+
+  .phones {
+    float: right;
+    position: relative;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+
+  .phone:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+
+  .phone .bold {
+    font-weight: bold;
+  }
+
+  .phones {
+    margin-right: 10px;
+  }
+
+  .phones img {
+    position: absolute;
+    left: -60px;
+    top: 5px;
+  }
+
+  .menu li {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 1220px) {
+    .menu li {
+      font-size: 13px;
+    }
+  }
+
+  .menu li a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+
+  .menu li:last-of-type {
+    margin-right: 0px;
+  }
+
+  .menu {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .mail-feedback {
+    margin-left: 50px;
+  }
+
+  .mail {
+    font-size: 18px;
+    color: #14ade0;
+    padding: 0px;
+  }
+
+  .feedback-call {
+    font-size: 22px;
+    color: #14ade0;
+  }
+
+  .feedback-order {
+    background-color: rgb(0, 143, 214);
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 360px;
+  }
+}
+
+.footer {
+  background: white;
+
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 10px;
+
+
+    .footer-left {
+      float: left;
+    }
+
+    .footer p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer-left li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .footer-left img {
+      vertical-align: middle;
+    }
+
+    .footer-right {
+      float: right;
+    }
+
+    .to-right {
+      float: right;
+    }
+
+    .footer-right ul {
+      float: right;
+    }
+
+    .footer-right li {
+      display: inline;
+    }
+
+    .footer-right ul {
+      margin-top: 50px;
+    }
+
+    .privacy {
+      float: right;
+      margin-top: 30px;
+    }
+
+    .privacy a {
+      color: #0093d6;
+    }
+  }
+}
